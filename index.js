@@ -17,7 +17,12 @@ convertBtn.addEventListener("click", function () {
         negativeNumber()
     }
     else if (parseInt(num) >= 0){
-        renderValues(num)
+        if(!isNaN(num) && !isNaN(parseFloat(num))){
+            renderValues(num)
+        }
+        else{
+            errorMessage()
+        }
     }
     else {
         errorMessage()
