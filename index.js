@@ -41,14 +41,14 @@ function errorMessage() {
     lengthEl.innerHTML =
         volumeEl.innerHTML =
         massEl.innerHTML =
-        "Please enter a valid number"
+        "A valid number would be appreciated🙂"
 }
 
 function negativeNumber() {
     lengthEl.innerHTML =
         volumeEl.innerHTML = 
         massEl.innerHTML =
-        "Please enter a positive number"
+        "Do you really want to convert a negative number?🤨"
 }
 
 resetBtn.addEventListener("click", function () {
@@ -56,5 +56,5 @@ resetBtn.addEventListener("click", function () {
     lengthEl.innerHTML =
         volumeEl.innerHTML =
         massEl.innerHTML =
-        "Enter a value in the input box"
+        "Enter a value in the input😊"
 })
