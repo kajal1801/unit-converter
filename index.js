@@ -13,11 +13,14 @@ const resetBtn = document.getElementById("reset-btn")
 
 convertBtn.addEventListener("click", function () {
     let num = inputEl.value;
-    if (isNaN(parseInt(num)) && isNaN(parseFloat(num))) {
-        errorMessage()
+    if (parseInt(num) < 0) {
+        negativeNumber()
+    }
+    else if (parseInt(num) >= 0){
+        renderValues(num)
     }
     else {
-        renderValues(num)
+        errorMessage()
     }
 })
 
@@ -30,7 +33,7 @@ function renderValues(num) {
     let pound = (num * 2.204).toFixed(2)
 
     lengthEl.innerHTML = `${num} meters = ${feet} feet | ${num} feet = ${meter} meters`
-    volumeEl.innerHTML = `${num} liters = ${gallons} gallons | ${num} galoons = ${liters} liters`
+    volumeEl.innerHTML = `${num} liters = ${gallons} gallons | ${num} gallons = ${liters} liters`
     massEl.innerHTML = `${num} kilograms = ${pound} pounds | ${num} pounds = ${kg} kilograms`
 }
 
@@ -39,6 +42,13 @@ function errorMessage() {
         volumeEl.innerHTML =
         massEl.innerHTML =
         "Please enter a valid number"
+}
+
+function negativeNumber() {
+    lengthEl.innerHTML =
+        volumeEl.innerHTML = 
+        massEl.innerHTML =
+        "Please enter a positive number"
 }
 
 resetBtn.addEventListener("click", function () {
