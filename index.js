@@ -56,5 +56,5 @@ resetBtn.addEventListener("click", function () {
     lengthEl.innerHTML =
         volumeEl.innerHTML =
         massEl.innerHTML =
-        "Enter a value in the input😊"
+        "Enter a value in the input box😊"
 })
