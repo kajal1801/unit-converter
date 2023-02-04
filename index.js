@@ -25,8 +25,8 @@ const resetBtn = document.getElementById("reset-btn")
      let pound = (num * 2.204).toFixed(2)
      
      lengthEl.innerHTML = `${num} meters = ${feet} feet | ${num} feet = ${meter} meters`
-     volumeEl.innerHTML = `${liters} liters = ${gallons} gallons | ${num} galoons = ${liters} liters`
-     massEl.innerHTML = `${kg} kilograms = ${pound} pounds | ${pound} pounds = ${kg} kilograms`
+     volumeEl.innerHTML = `${num} liters = ${gallons} gallons | ${num} galoons = ${liters} liters`
+     massEl.innerHTML = `${num} kilograms = ${pound} pounds | ${num} pounds = ${kg} kilograms`
  }
  
  
