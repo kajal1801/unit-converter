@@ -13,7 +13,7 @@ const resetBtn = document.getElementById("reset-btn")
 
 convertBtn.addEventListener("click", function () {
     let num = inputEl.value;
-    if (parseInt(num) < 0) {
+    if (parseInt(num) < 0 || num === "-0") {
         negativeNumber()
     }
     else if (parseInt(num) >= 0){
