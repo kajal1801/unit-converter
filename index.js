@@ -35,7 +35,6 @@ function renderValues(num) {
 }
 
 function errorMessage() {
-    inputEl.value = "";
     lengthEl.innerHTML =
         volumeEl.innerHTML =
         massEl.innerHTML =
