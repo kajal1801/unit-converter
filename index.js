@@ -13,7 +13,7 @@ const resetBtn = document.getElementById("reset-btn")
 
 convertBtn.addEventListener("click", function () {
     let num = inputEl.value;
-    if (typeof num === "string") {
+    if (isNaN(parseInt(num)) && isNaN(parseFloat(num))) {
         errorMessage()
     }
     else {
